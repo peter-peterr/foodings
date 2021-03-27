@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" conent="content=device-width, initial-scale=1.0" >
+	<title></title>
+	<link rel="stylesheet" href="test.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Food<span>.</span></a>
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="#banner">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#expert">Expert</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>Always Choose Good</h2>
+			<p>"After a good dinner one can forgive anybody, even one's own relations."
+                  ― Oscar Wilde</p>
+            <p>"There is no love sincerer than the love of food."
+                  ― George Bernard Shaw,</p>
+			<a href="#menu" class="btn">Our Menu</a>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<br><br>
+				<h2 class="titletext"><span>A</span>bout Us</h2>
+				<p>In 1984, Food dot opened its doors with one goal in mind: Better Ingredients. Better Food. We knew that with quality ingredients we would create superior quality food. That goal and the promise of Better Ingredients. Better Food. remain true to this day.</p><br><br>
+                <p>Our fundamental belief is simple: take care of your people and give them the best to work with and you will make superior quality food. This is what drives us and it's why we invest more than many others in the industry in our effort to consistently deliver superior food and superior service.</p>
+            </div>
+            <div class="col50">
+            	<div class="imgBx">
+            		<img src="food.jpg">
+            	</div>
+            </div>
+        </div> 		
+	</section>
+	<section class="menu" id="menu">
+		<div class="title">
+			<br><br>
+			<h2 class="titletext"><span>M</span>enu</h2>
+			<p>Choose You Own Main Dish from the menu including: Salads, Pizza, Pasta, Soup, dressing, and don't forget about the dessert.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu1.jpg">
+				</div>
+				<div class="text">
+					<h3>Special Salads</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu2.jpg">
+				</div>
+				<div class="text">
+					<h3>Special Pizza</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu3.jpg">
+				</div>
+				<div class="text">
+					<h3>Special Pasta</h3>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu4.jpg">
+				</div>
+				<div class="text">
+					<h3>Special Soup</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu5.jpg">
+				</div>
+				<div class="text">
+					<h3>Special dressing</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu6.jpg">
+				</div>
+				<div class="text">
+					<h3>Special dessert</h3>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<a href="#" class="btn">View All</a>
+		</div>
+	</section>
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY >0);
+		});
+
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
